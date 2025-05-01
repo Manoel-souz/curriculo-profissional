@@ -27,7 +27,7 @@ class PDF(FPDF):
         self.cell(0, 8, "MANOEL SOUZA", align='C', new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         
         self.set_font('Helvetica', 'B', 16)
-        self.cell(0, 6, "Desenvolvedor Backend (em transição de carreira)", align='C', new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        self.cell(0, 6, "Desenvolvedor Node.js | React", align='C', new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         
         # Contato em duas linhas
         self.set_font('Helvetica', '', 11)
@@ -141,9 +141,9 @@ class PDF(FPDF):
 
 # Dados do currículo
 resumo = (
-    "Profissional com experiência em Marketing Digital e gestão de projetos, em transição para Desenvolvimento Backend. "
-    "Conhecimento prático em desenvolvimento de sistemas e APIs através da Options Tech. "
-    "Familiaridade com Node.js, JavaScript/TypeScript, PostgreSQL e Git."
+    "Desenvolvedor Node.js com experiência em desenvolvimento de sistemas e APIs. "
+    "Experiência em Node.js v18 e v20, com conhecimento em React para desenvolvimento full-stack. "
+    "Experiência em PostgreSQL, Git e desenvolvimento de aplicações web modernas."
 )
 
 experiencias = [
@@ -151,38 +151,42 @@ experiencias = [
         "titulo": "Fundador & Desenvolvedor | Options Tech",
         "periodo": "2020 - Atualmente",
         "descricao": [
-            "Eu e minha equipe desenvolvemos sistemas personalizados, soluções de automação e aplicativos para diversos clientes.",
-            "Desenvolvi e mantive APIs RESTful utilizando Node.js e TypeScript.",
-            "Trabalhei com bancos de dados relacionais (PostgreSQL) e Git para controle de versão."
+            "Desenvolvimento de sistemas personalizados e soluções de automação utilizando Node.js, Python e JavaScript.",
+            "Criação e manutenção de APIs RESTful com Node.js v18 e v20.",
+            "Implementação de bancos de dados PostgreSQL e controle de versão com Git.",
+            "Desenvolvimento de interfaces web com React para aplicações full-stack."
         ]
     },
     {
-        "titulo": "Assistente de Marketing | Grupo Raotes - Embu das Artes, São Paulo",
+        "titulo": "Desenvolvedor Web | Grupo Raotes - Embu das Artes, São Paulo",
         "periodo": "2022 - 2025",
         "descricao": [
-            "Criação de sites, gerenciamento de redes sociais, campanhas, endomarketing e análise de KPIs."
+            "Desenvolvimento e manutenção de sites institucionais e sistemas web.",
+            "Integração de APIs e sistemas de terceiros.",
+            "Implementação de soluções de automação para processos internos.",
+            "Desenvolvimento de interfaces responsivas e otimizadas."
         ]
     }
 ]
 
 formacao = (
-    "Marketing Digital | Estácio (2021 - 2023)\n"
-    "Base em análise de mercado, comportamento do consumidor e estratégias de comunicação."
+    "Desenvolvimento Web | Estácio (2021 - 2023)\n"
+    "Foco em desenvolvimento full-stack, arquitetura de software e boas práticas de programação."
 )
 
 habilidades = [
-    "Linguagens e Frameworks: Node.js (Básico), TypeScript (Básico), JavaScript (Básico), Python (Básico), NestJS (Básico)",
-    "Bancos de Dados: PostgreSQL (Noções)",
-    "Controle de Versão: Git (Intermediário)",
-    "Desenvolvimento Web: APIs RESTful, Desenvolvimento de Sites",
-    "Outras: Clean Code, Testes Automatizados, Análise de KPIs, Pacote Office, Photoshop"
+    "Linguagens e Frameworks: Node.js v18/v20 (basico), React (basico), TypeScript (basico), JavaScript (intermediario), Python (Básico), NestJS (basico)",
+    "Bancos de Dados: PostgreSQL (basico)",
+    "Controle de Versão: Git (basico)",
+    "Desenvolvimento Web: APIs RESTful, Desenvolvimento Full-stack, Arquitetura de Software",
+    "Outras: Clean Code, Testes Automatizados, Docker, CI/CD"
 ]
 
 idiomas = "Inglês: Intermediário"
 
 sobre = (
-    "Apaixonado por tecnologia e aprendizado contínuo. Experiência em marketing e desenvolvimento na Options Tech "
-    "proporciona visão única para criar soluções eficientes. Me comunico bem, sou colaborativo e possuo grande vontade de aprender."
+    "Desenvolvedor apaixonado por tecnologia e soluções inovadoras. Experiência em desenvolvimento full-stack "
+    "com foco em Node.js e React. Comprometido com boas práticas de programação e desenvolvimento de software de qualidade."
 )
 
 # Criando o PDF
